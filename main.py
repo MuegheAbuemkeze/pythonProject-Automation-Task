@@ -16,7 +16,8 @@ Email_Updates = {
     "something@helpinghands.cm": "something@helpinghands.org"
 }
 
-# Loop through the rows and update their values
+# Loop through the rows and update their values by accessing the updated email stored in the 
+#dictionary called Email_Updates 
 for rowNum in range(1, 31):
     Updates = ws.cell(row=rowNum, column=2).value
     if Updates in Email_Updates:
