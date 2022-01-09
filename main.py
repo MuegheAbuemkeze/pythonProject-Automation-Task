@@ -35,6 +35,4 @@ df = pd.read_csv("/home/mac/Desktop/employeedata.csv")
 df['Email address'] = df['Email address'].replace({'something@helpinghands.cm':'something@helpinghands.org'})
 
 #writing into the csv file
-df.to_csv("/home/mac/Desktop/employeedata.csv", index=False)
-
-print(df)
+df.to_csv("/home/mac/Desktop/employeedata.csv", index=False) 
